@@ -1,0 +1,16 @@
+:root {
+
+    --violeta: hsl(263, 55%, 52%);
+    --azul-cinza-escuro: hsl(217, 19%, 35%);
+    --azul-escuro: hsl(219, 29%, 14%);
+    --branco: hsl(0, 0%, 100%);
+    --cinza: hsl(0, 0%, 81%);
+    --azul-cinza-claro: hsl(210, 46%, 95%);
+}
+
+html {
+
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background: var(--azul-cinza-claro);
+}

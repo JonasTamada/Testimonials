@@ -1,0 +1,168 @@
+.testimonials {
+
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+}
+
+.card {
+
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 10px;
+    padding: 2.5em;    
+    margin: 1.5em 2em;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.user {
+
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 1em;
+}
+
+.user__img {
+
+    width: 35px;
+    border-radius: 50%;
+}
+
+.user__info {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user__name {
+
+    color: var(--branco);
+}
+
+.user__name--dark {
+
+    color: var(--azul-escuro);
+}
+
+.user__verified {
+
+    color: var(--branco);
+    opacity: 0.5;
+}
+
+.user__verified--dark {
+
+    color: var(--azul-escuro);
+    opacity: 0.5;
+}
+
+.user__test,
+.user__test--dark {
+
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 1em;
+    line-height: 1.1;
+}
+
+.user__test {
+
+    color: var(--branco);
+}
+
+.user__test--dark {
+
+    color: var(--azul-escuro);
+}
+
+.user__com,
+.user__com--dark {
+
+    font-size: 16px;
+    opacity: 0.7;
+    text-align: left;
+    line-height: 1.1;
+}
+
+.user__com {
+
+    color: var(--branco);
+}
+
+.user__com--dark {
+
+    color: var(--azul-escuro);
+    opacity: 0.7;
+}
+
+.card__daniel {
+
+    background-color: var(--violeta);
+    background-image: url("../images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 90% 0%;
+}
+
+.card__jonathan {
+
+    background-color: var(--azul-cinza-escuro);
+}
+
+.card__patrick {
+
+    background-color: var(--azul-escuro);
+}
+
+.card__jeanette,
+.card__kira {
+
+    background: var(--branco);
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .testimonials {
+
+        padding: 10em 7em;
+        display: grid;
+        grid-template-areas:
+        "daniel daniel jonathan kira"
+        "jeanette patrick patrick kira";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        gap: 20px;
+    }
+
+    .card {
+
+        margin: 0;
+    }
+
+    .card__daniel {
+
+        grid-area: daniel;
+    }
+
+    .card__jonathan {
+
+        grid-area: jonathan;
+    }
+
+    .card__jeanette {
+
+        grid-area: jeanette;
+    }
+
+    .card__patrick {
+
+        grid-area: patrick;
+    }
+
+    .card__kira {
+
+        grid-area: kira;
+    }
+}
